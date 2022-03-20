@@ -1,0 +1,489 @@
+:root {
+    --fs-700: 3rem;
+    --fs-600: 2.25rem;
+    --fs-500: 1.69rem;
+    --fs-400: 1.27rem;
+    --fs-300: 0.95rem;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+    font-size: var(--fs-600);
+    font-family: Montserrat;
+}
+
+h2 {
+    font-size: var(--fs-500);
+    font-family: Montserrat;
+}
+
+
+h3 {
+    font-size: var(--fs-400);
+    font-family: Montserrat;
+}
+
+a {
+    font-size: var(--fs-400);
+    font-family: Montserrat;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+}
+
+section {
+    width: 100vw;
+}
+
+section:not(:first-child) {
+    padding: 50px 0;
+}
+
+/* Styles for Headers */
+
+.header-container {
+    height: 100%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    color: black;
+}
+
+.header-logo {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.header-logo h1 {
+    font-weight: 500;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-logo h1 span{
+    font-size: var(--fs-600);
+    font-weight: 900;
+}
+
+.navbar {
+    float: right;
+    height: 100%;
+    display: table;
+}
+
+.navbar ul {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Montserrat;
+}
+
+.navbar li {
+    float: left;
+    padding: 0 20px;
+}
+
+.navbar li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.navbar li:last-of-type {
+    padding-right: 0;
+}
+
+/* Landing page section */
+
+.landing-page-section {
+    background-image: linear-gradient(315deg, rgb(255, 255, 252, 0.2), rgb(190, 183, 164, 0)), url("landpage-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    background-color: #fffffc;
+}
+
+.landing-page-container{
+    height: 100%;
+    width: 30vw;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.landing-page-container > div {
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: auto;
+    color: white;
+}
+
+.landing-page-container > div h1 {
+    text-align: center;
+    font-size: var(--fs-700);
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.landing-page-container > div h2 {
+    text-align: center;
+    font-size: var(--fs-500);
+    padding: 20px;
+    margin: 20px 0;
+
+}
+
+.landing-page-container > div a {
+    text-align: center;
+    font-size: var(--fs-500);
+    padding: 15px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.landing-page-container > div a:hover {
+    background-color: rgb(190, 183, 164);
+    cursor: pointer;
+}
+
+/* topics section styles */
+
+.topic-section {
+    width: 100%;
+}
+
+.topic-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.topic-container article {
+    width: 25%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 0 1.5rem;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.topic-container article:last-of-type {
+    border-right: 2px solid black;
+}
+
+.topic-container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.topic-container article > img {
+    display: block;
+    width: 6rem;
+    margin: 20px auto;
+    border: 0;
+}
+
+.topic-container article > h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.topic-container article h3 {
+    text-align: center;
+    height: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Section: Pick a package Styles */
+
+.package-section {
+    background-color: #f7f7f7;
+}
+
+.package-header {
+    text-align: center;
+    font-size: var(--fs-600);
+    font-weight: 600;
+}
+
+.package-instruction {
+    text-align: center;
+    font-size: var(--fs-500);
+    margin: 30px 0;
+}
+
+.package-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.package-container article {
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+    transition: transform .4s ease-out;
+    opacity: 0.85;
+}
+
+.package-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.package-container article:nth-of-type(3) {
+    margin-right: 0;
+}
+.package-container article:last-of-type {
+    margin-right: 0;
+}
+
+.package-container img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: middle;
+}
+
+#package-img-3 {
+    object-position: right;
+}
+#package-img-1 {
+    object-position: center 80% ;
+}
+#package-img-4 {
+    object-position: center 80% ;
+}
+
+.package-container div {
+    height: 60px;
+    position: relative;
+    border: 1px solid #dbc8af;
+    border-top: none;
+    background-color: white;
+}
+
+.package-container div h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.package-container article:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Review Section */
+
+.review-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.review-container article {
+    width: 400px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    height: 150px;
+    position: relative;
+    float: left;
+    border: 2px solid #dbc8af;
+}
+
+.review-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.review-container article:nth-of-type(3) {
+    margin-right: 0;
+}
+.review-container article:last-of-type {
+    margin-right: 0;
+}
+
+
+.review-container q {
+    font-style: italic;
+    font-size: var(--fs-400);
+    font-weight: 500;
+    font-family: 'Nunito Sans', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 300px;
+}
+.review-container span {
+    position: absolute;
+    font-family: 'Nunito Sans', sans-serif;
+    bottom: 5%;
+    right: 5%;
+    transform: translateX(5%);
+}
+
+.footer{
+    background: #343d46;
+    padding: 70px 0;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 25%;
+    float: left;
+}
+
+.footer-row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer-column > h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: var(--fs-500);
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.footer-column > h3::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #bc2525;
+}
+
+.footer-column li {
+    margin-bottom: 20px;
+}
+
+.footer-column li:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer-column li a {
+    text-transform: capitalize;
+    font-size: var(--fs-400);
+    font-weight: 500;
+    color: bbbbbb;
+    transition: all 0.3s ease;
+}
+
+
+.footer-column li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-column .social-links a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 0px 20px 20px 0;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+.footer-column .social-links a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
