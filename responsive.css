@@ -1,0 +1,98 @@
+
+/* Responsive Design */
+
+@media only screen and (max-width: 320px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    :root {
+        --fs-800: 1.5rem;
+        --fs-700: 1.27rem;
+        --fs-600: 0.95rem;
+        --fs-500: 0.7rem;
+        --fs-400: 0.6rem;
+        --fs-300: 0.4rem;
+    }
+
+.header-logo {
+    padding-left: 5vw;
+}
+
+.navbar {
+    padding-right: 5vw;
+}
+
+.navbar li {
+    padding: 0 5px;
+}
+.navbar li a {
+    font-size: var(--fs-500);
+}
+
+/* Landing page section */
+
+.landing-page-container{
+    width: 60vw;
+}
+
+
+.landing-page-container > div h1 {
+    font-size: var(--fs-800);
+    margin: 10px 0;
+}
+
+.landing-page-container > div h2 {
+    font-size: var(--fs-600);
+}
+
+.landing-page-container > div a {
+    font-size: var(--fs-600);
+    padding: 10px;
+}
+
+
+/* topics section styles */
+
+.topic-container {
+    width: 90%;
+}
+
+.topic-container article {
+    width: 50%;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: none;
+    padding: 0 1rem;
+    padding-bottom: 30px;
+}
+
+.topic-container article:nth-child(n+3) {
+    border-bottom: 2px solid black;
+}
+
+
+.topic-container article:nth-child(2) {
+    border-right: 2px solid black;
+}
+
+.topic-container article > img {
+    width: 2rem;
+}
+
+.topic-container article > h1 {
+    margin-bottom: 20px;
+}
+
+.topic-container article h3 {
+    height: 2rem;
+    margin-bottom: 0;
+    font-size: var(--fs-500)
+}
+
+}
+
+@media only screen and (max-width: 769px) {
+
+}
